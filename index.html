@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+     <!-- Font Awesome for Icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+<body>
+ 
+    <!-- navbar -->
+
+    <header>
+        <div class="logo"><i class="fa-regular fa-file"></i> ProFile<span>X</span></div>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+             <select id="select-grp">
+             <option >Tools</option>
+             <option>Cover Letter Builder</option>
+             <option>Resume Templates</option>
+             <option>Career Growth</option>
+             <option>Blogs</option>
+             <option>ATS Friendly Resumes</option>
+             <option>Resume Checker</option>
+             <option>Resume Skills</option>
+            </select>
+                <a href="pricing.html">Pricing</a>
+                <a href="about.html">About Us</a>
+                <a href="#" id="cv-btn">Contact Us</a>
+                <a href="login.html" id="login">Log in</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home page -->
+
+    <section class="home">
+        <img src="./Images/home.png" alt="Illustration of resume building">
+        <h1 class="heading">Online Resume Builder With Creative Templates.</h1>
+        <p class="para">Our perfect resume builder takes the hassle out of resume writing.<br>
+        Choose from several templates and follow easy prompts to create the perfect<br>job-ready resume.</p>
+        <div class="button-grp">
+            <a href="#">Build My Resume</a>
+            <a href="#">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features Page-->
+
+    <section class="feature-container">
+        <div class="card">
+            <div class="icon" style="background-color: #d1d8ff;">
+                <img src="./Images/thumbs-up.png" alt="Easy Online Resume Builder">
+            </div>
+            <div class="content-box">
+                <h2>Easy Online Resume Builder</h2>
+                <p>Build a professional resume quickly and easily with our online resume builder.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon" style="background-color: #ffddb1;">
+                <img src="./Images/expert.png" alt="Step By Step Expert Tips">
+            </div>
+            <div class="content-box">
+                <h2>Step By Step Expert Tips</h2>
+                <p>Get step-by-step expert tips to craft a standout resume effortlessly.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon" style="background-color: #c8f7c5;">
+                <img src="./Images/approved.png" alt="Recruiter Approved Phrases">
+            </div>
+            <div class="content-box">
+                <h2>Recruiter Approved Phrases</h2>
+                <p>Enhance resume with recruiter-approved phrases that showcase your skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About us page -->
+
+    <section class="about-section">
+        
+        <!-- Colored Dot Style-->
+
+        <div class="dots">
+            <span class="dot" style="background-color: #00d8ff;"></span>
+            <span class="dot" style="background-color: #ff4d4d;"></span>
+            <span class="dot" style="background-color: #ff6f61;"></span>
+            <span class="dot" style="background-color: #ffea00;"></span>
+        </div>
+
+       
+        <h1 class="about-title">Why Choose Our Platform?</h1>
+        <p class="about-description">
+            Choose our platform for a seamless resume building experience designed to help you stand out in today's competitive job market. With professional templates, expert-guided tips & easy customization, you can create a job-winning resume in minutes. Our ATS Friendly designs ensure your resume gets noticed by recruiters, while instant downloads and multiple formats keep the process hassle-free.
+        </p>
+        <p class="about-description">
+            We offer a wide range of professionally designed templates tailored to different industries, ensuring your resume stands out to hiring managers. With expert advice at every step, you'll be guided on how to highlight your skills and achievements effectively.
+        </p>
+        <div class="about-button">
+            <a href="#" class="btn-one">Let's Build Your Resume</a>
+        </div>
+    </section>
+    
+    <!-- Additional Features -->
+
+    <section class="additional-features">
+        <h1 class="features-heading">We Deliver The Best</h1>
+        <ul class="features-lists">
+            <li>
+                <span class="check-icon">✔</span>
+                Proven Resume Templates to Increase Hiring Chance
+            </li>
+            <li>
+                <span class="check-icon">✔</span>
+                Creative and Clean Templates Design
+            </li>
+            <li>
+                <span class="check-icon">✔</span>
+                Easy and Advance Online Resume Builder
+            </li>
+            <li>
+                <span class="check-icon">✔</span>
+                Free to use. Developed by hiring professionals
+            </li>
+            <li>
+                <span class="check-icon">✔</span>
+                Fast Easy Resume and CV Formatting
+            </li>
+            <li>
+                <span class="check-icon">✔</span>
+                Recruiter Approved Phrases.
+            </li>
+        </ul>
+        <div class="img-box">
+            <img src="./Images/feature-Image.jpeg" alt="Resume Template Image" style="border: 2px solid #0000ff;">
+        </div>
+        <div class="buttons-btns">
+            <button>Do you Need a Complete Custom CV Template?</button>
+            <button>Send a Request</button>
+        </div>
+    </section>
+
+
+    <!-- Templates Section -->
+
+    <section class="template-box">
+        <h2>Our Creative Templates</h2>
+        <p>Our templates offer customizable designs to simplify and elevate your creative projects.</p>
+    </section>
+
+    <section class="template-list">
+        <div class="templates">
+            <img src="./Images/resume 8.webp" alt="Template 1" style="border: 2px solid #0000ff;">
+            <div class="buttons">
+                <button>Use</button>
+                <button>See</button>
+            </div>
+        </div>
+
+        <div class="templates">
+            <img src="./Images/resume 6.webp" alt="Template 2" style="border: 2px solid #0000ff;">
+            <div class="buttons">
+               <button>Use</button>
+                <button>See</button>
+            </div>
+        </div>
+
+        <div class="templates">
+            <img src="./Images/resume 7.png" alt="Template 3" style="border: 2px solid #0000ff;">
+            <div class="buttons">
+                <button>Use</button>
+                <button>See</button>
+            </div>
+        </div>   
+    </section>
+
+    <br> <br> <hr>
+
+    <!-- pricing Section -->
+
+    <section class="price-box">
+        <h2>Our Pricing Plans</h2>
+        <p>Ready to Start? Don't Worry, We'll Keep You At Comfortable Budget</p>
+        <p>Get started a 7-day trial, Cancel Anytime.</p>
+    </section>
+
+    <section class="pricing-plans">
+        <div class="plans">
+            <h3>Beginner</h3>
+            <p>Perfect to get started</p>
+            <div class="price">Free</div>
+            <ul>
+                <li>Generate 1000 AI words</li>
+                <li>Multiple languages supported</li>
+                <li>Writing settings control</li>
+                <li>24/7 Support Services</li>
+            </ul>
+            <button>Subscribe</button>
+        </div>
+
+        <div class="plans">
+            <h3>Standard</h3>
+            <p>Best for Professionals</p>
+            <div class="price">$19.00/Monthly</div>
+            <ul>
+                <li>Generate 1000 AI words</li>
+                <li>Multiple languages supported</li>
+                <li>Writing settings control</li>
+                <li>24/7 Support Services</li>
+            </ul>
+            <button>Subscribe</button>
+        </div>
+
+        <div class="plans">
+            <h3>Yearly Pack</h3>
+            <p>Best for Professionals</p>
+            <div class="price">$60.00/Yearly</div>
+            <ul>
+                <li>You will be billed per year, and get 
+                    unlimited access to all resume </li>
+                <li>start with unintterupted services.</li>
+                <li>24/7 Support Services</li>
+            </ul>
+            <button>Subscribe</button>
+        </div>
+    </section>
+
+    <br>  <br>
+
+    <!-- testimonial section -->
+
+    <section class="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <p>"A user-friendly tool that helped me craft a <br>standout resume."</p>
+                <p>- John Doe, Software Engineer</p>
+            </div>
+            <div class="testimonial">
+                <p>"Easy to use and highly effective in creating <br> professional resumes."</p>
+                <p>- Jane Smith, Marketing Manager</p>
+            </div>
+            <div class="testimonial">
+                <p>"Love the variety of templates and the ability <br> to customize them."</p>
+                <p>- Michael Johnson, Product Designer</p>
+            </div>
+            </div>
+    </section>
+  
+       
+    <!-- footer section -->
+
+    <footer class="footer">
+        <div class="box-model">
+            <div class="footer-section brand-section">
+                <div class="brand-icon">
+                    <i class="fas fa-user-circle"></i>
+                    <span>ProFileX</span>
+                </div>
+                <p>
+                    Build a standout resume effortlessly with ProFileX - your gateway to professional success!
+                </p>
+                
+               <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+          
+            <div class="footer-section">
+                <h4>PRIVACY & TOS</h4>
+                <ul>
+                    <li><a href="#">Advertiser Agreement</a></li>
+                    <li><a href="#">Acceptable Use Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Technology Privacy</a></li>
+                    <li><a href="#">Developer Agreement</a></li>
+                </ul>
+            </div>
+
+           
+            <div class="footer-section">
+                <h4>NAVIGATE</h4>
+                <ul>
+                    <li><a href="#">Advertisers</a></li>
+                    <li><a href="#">Developers</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">Connect</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact-section">
+                <h4>CONTACT US</h4>
+                <p>Mailing Address: xx00 E. Union Ave <br> Suite 1100. Denver, CO 80237</p>
+                <p>+999 90932 627</p>
+                <p>support@profilex.com</p>
+            </div>
+        </div>
+  
+        <div class="scroll-top">
+            <a href="#top"><i class="fas fa-arrow-up"></i> SCROLL TOP</a>
+        </div>
+    </footer>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
